@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fdf2f8 0%, #f3e8ff 100%);
+  min-height: 100vh;
+}
+
+/* Customer Booking Styles */
+.booking-container {
+  max-width: 28rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #db2777;
+  margin-top: 0.5rem;
+}
+
+.header p {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.steps {
+  display: flex;
+  background: white;
+  border-radius: 9999px;
+  padding: 0.25rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.step {
+  flex: 1;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+}
+
+.step.active {
+  background: #db2777;
+  color: white;
+}
+
+.step.inactive {
+  color: #9ca3af;
+}
+
+.service-card, .staff-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.service-card:hover, .staff-card:hover {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+.service-name {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.service-details {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.price {
+  color: #db2777;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.staff-name {
+  font-weight: bold;
+}
+
+.staff-role {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.time-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.time-slot {
+  background: white;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.time-slot:hover {
+  background: #db2777;
+  color: white;
+}
+
+.confirmation-box {
+  background: white;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #db2777;
+}
+
+.btn-primary {
+  width: 100%;
+  background: #16a34a;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #15803d;
+}
+
+.btn-secondary {
+  width: 100%;
+  background: none;
+  color: #6b7280;
+  padding: 0.5rem;
+  border: none;
+  font-size: 0.875rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.back-button {
+  color: #6b7280;
+  font-size: 0.875rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+/* Dashboard Styles */
+.dashboard-container {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.dashboard-header {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.dashboard-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.appointment-card {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  border-left: 8px solid #db2777;
+}
+
+.appointment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.customer-name {
+  font-weight: bold;
+  font-size: 1.125rem;
+  margin-bottom: 0.25rem;
+}
+
+.customer-phone {
+  color: #4b5563;
+  margin-bottom: 0.5rem;
+}
+
+.service-info {
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.time-info {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+}
+
+.btn-checkin {
+  background: #16a34a;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.btn-noshow {
+  background: #ef4444;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+
+/* Login Styles */
+.login-container {
+  max-width: 28rem;
+  margin: 5rem auto 0;
+  padding: 1rem;
+}
+
+.login-box {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.login-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Admin Styles */
+.admin-container {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.admin-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.stats-card {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.stats-number {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #db2777;
+}
+
+.status-card {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.status-green {
+  color: #16a34a;
+}
+
+.status-yellow {
+  color: #ca8a04;
+}
+
+/* Navigation */
+.nav-bar {
+  background: white;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.nav-links {
+  max-width: 72rem;
+  margin: 0 auto;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #4b5563;
+}
+
+.nav-link.active {
+  color: #db2777;
+  font-weight: bold;
+}
